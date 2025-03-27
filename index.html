@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Перенаправление...</title>
+    <title>Перенаправлення...</title>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3648QXJS9"></script>
@@ -14,17 +14,48 @@
       gtag('config', 'G-S3648QXJS9');
     </script>
 
-    <!-- Автоматический редирект через 2 секунды -->
-    <meta http-equiv="refresh" content="2; url=https://open.spotify.com/track/2OqhE3Gkwcv7LEmNQAQWPg?si=755c813046c64e1a">
+    <!-- Автоматичне перенаправлення через 5 секунд -->
+    <meta http-equiv="refresh" content="5; url=https://open.spotify.com/track/2OqhE3Gkwcv7LEmNQAQWPg?si=755c813046c64e1a">
     
     <script>
         setTimeout(function() {
             window.location.href = "https://open.spotify.com/track/2OqhE3Gkwcv7LEmNQAQWPg?si=755c813046c64e1a";
-        }, 2000);
+        }, 5000);
     </script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #1DB954;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h2>Перенаправляем на Spotify...</h2>
-    <p>Если перенаправление не сработало, нажмите <a href="https://open.spotify.com/track/2OqhE3Gkwcv7LEmNQAQWPg?si=755c813046c64e1a">сюда</a>.</p>
+    <h2>Ця пісня асоціюється з тобою...</h2>
+    <p>Перенаправляємо на Spotify</p>
+    <p>Якщо перенаправлення не спрацювало, натисни <a href="https://open.spotify.com/track/2OqhE3Gkwcv7LEmNQAQWPg?si=755c813046c64e1a">сюди</a>.</p>
 </body>
 </html>
